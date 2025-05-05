@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-container">
+
+   
+    <nav class="topnav">
+      <ul>
+        <li>🏠 Home</li>
+        <li>Admin</li>
+        <li>Skills</li>
+        <li>Professional</li>
+        <li>Dashboard</li>
+      </ul>
+      <div class="search-bar">
+        <input type="search" name="search" id="searchable" placeholder="Search..." />
+        <button>🔎 Search</button>
+        <button id="themeToggle">🌓</button>
+      </div>
+    </nav>
+
+  
+    <aside class="leftnav">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML 98% <p id="html"></p></li>
+        <li>CSS 60% <p id="css"></p></li>
+        <li>JavaScript 70% <p id="javascript"></p></li>
+        <li>PHP 80% <p id="php"></p></li>
+        <li>Node.js 78% <p id="nodejs"></p></li>
+      </ul>
+    </aside>
+
+    
+    <aside class="rightnav">
+      <h3>📢 News</h3>
+      <ul>
+        <li>🆕 New features added</li>
+        <li>🎨 Dark mode now live</li>
+        <li>🚀 Improved performance</li>
+      </ul>
+    </aside>
+
+ 
+    <main class="main-content">
+      <div class="intro">
+        <p>Hello! Welcome again. You made the right choice viewing this channel for updates and info.</p>
+        <img src=".png" width="500px" height="400px" />
+        <p>This is Jackson's website to help you grow your skills. Remember: knowledge is power!</p>
+      </div>
+
+      <h1>My Blog</h1>
+      <form id="storyForm">
+        <input type="text" id="title" placeholder="Blog Title" required />
+        <textarea id="description" placeholder="Blog Content" required></textarea>
+        <input type="file" id="imageUpload" accept="image/*" />
+        <button type="submit">Add Post</button>
+      </form>
+
+      <div id="stories"></div>
+    </main>
+
+
+    <footer class="bottomnav">
+      <div class="footer-section">
+        <h4>Settings</h4>
+        <ul>
+          <li><a href="#">Account Settings</a></li>
+          <li><a href="#">Privacy Settings</a></li>
+          <li><a href="#">Language</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
